@@ -1,0 +1,142 @@
+
+body, h1, h2,h3, p {
+  margin: 0;
+  padding: 0;
+  
+}
+
+
+
+/* Set box-sizing to border-box for consistent box model */
+* {
+  background-color: #de8c63;
+  box-sizing: border-box;
+}
+p{
+ font-size: large; 
+ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ text-align: center;
+ background-color: #ffffff;
+
+}
+
+/* Set background colors */
+body {
+  background-color: #f2f2f2;
+}
+
+.row {
+  margin: 20px;
+}
+#bg
+{
+  background-color: #de8c63;
+  width: 100%;
+}
+
+.section {
+  position: relative;
+  float: left;
+  width: calc(33.33% - 20px); /* Equal width for desktop view with margin */
+  padding: 20px;
+  border: 1px solid #000;
+  background-color: white;
+  margin-bottom: 20px;
+  margin-right: 20px;
+ 
+}
+
+a
+{
+  color: #000 !important;
+}
+
+h1 {
+  text-align: center;
+  color: #000;
+  /* font-size: 1.75em; */
+ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  padding: 20px;
+  background-color: #ffffff !important;
+}
+
+h3
+{
+  text-align: end;
+  padding-right: 20px;
+  padding-top: 20px;
+}
+
+h2 {
+  /* font-size: 1.25em; */
+  text-align: center;
+  position: relative;
+  color: black;
+  padding: 5px;
+  margin: 0;
+}
+.card .card-image .card-title {
+  color: #ffffff;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+  width: 100%;
+  border-bottom: 4px solid #de8c63;
+  text-align: center;
+}
+
+.card-image
+{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  /* text-align: center;
+   */
+   margin-left: auto;  
+margin-right: auto;  
+}
+.container
+{
+  width: 100% !important;
+}
+
+
+.section p {
+  margin-top: 40px; /* Add margin-top to create space below section title */
+}
+
+/* Media queries for responsive layout */
+@media (min-width: 992px) {
+  .section {
+    width: calc(33.33% - 20px) !important; /* Three sections per row for Desktop view with margin */
+  }
+  
+}
+@media (max-width: 991px) {
+  .section {
+    width: calc(50% - 20px) !important; /* Two sections per row for tablet view with margin */
+  }
+  .section.full-width {
+    width: 100% !important
+    
+  }
+}
+
+@media (max-width: 767px) {
+  .section {
+    width: 100% !important; /* Full width for mobile view */
+  }
+  
+  .section.full-width {
+    width: 100% !important; /* Full width for mobile view */
+  }
+  li
+{
+  background-color: #f2f2f2 !important;
+  width: 100%;
+}
+}
+
